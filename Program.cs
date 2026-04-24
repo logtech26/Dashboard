@@ -9,6 +9,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 
 // Add cors to share services with any solutions
+// now we can call this from anywhere since cors enable you to do so.
 builder.Services.AddCors( options => {
 
     options.AddPolicy("AllowAll", policy =>
